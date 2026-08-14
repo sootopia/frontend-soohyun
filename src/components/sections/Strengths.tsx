@@ -2,6 +2,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { Container } from '@/components/ui/Container';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { STRENGTHS } from '@/lib/site';
+import Image from 'next/image';
 
 export function Strengths() {
   return (
@@ -19,7 +20,18 @@ export function Strengths() {
             {STRENGTHS.map((item, index) => (
               <Reveal key={item.title} delay={index * 0.08}>
                 <article>
-                  <div className="aspect-video rounded-2xl bg-gray-100 dark:bg-gray-800" />
+                  <div className="relative aspect-video rounded-2xl bg-gray-100 overflow-hidden">
+                    {item.image && (
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        quality={100}
+                        sizes="(min-width: 768px) 33vw, 100vw"
+                        className="object-cover"
+                      />
+                    )}
+                  </div>
                   <h4 className="mt-5 text-lg font-semibold tracking-tight text-gray-950 dark:text-white">
                     {item.title}
                   </h4>
