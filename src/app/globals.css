@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-asta-sans), 'Apple SD Gothic Neo', 'Malgun Gothic', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  @apply font-sans text-gray-950 antialiased dark:bg-gray-950 dark:text-gray-400;
+}
+
+::selection {
+  @apply bg-blue-500/20 text-gray-950 dark:text-white;
+}
+
+button {
+  @apply cursor-pointer;
+}
