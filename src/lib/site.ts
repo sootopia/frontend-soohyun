@@ -39,21 +39,26 @@ export const STRENGTHS = [
 
 export const PROJECTS = [
   {
-    title: '한솔페이퍼넷 시스템 리뉴얼',
-    description: 'ASP.NET 기반 레거시 시스템을 Vue3 기반 시스템으로 리뉴얼하고, 사용성을 전반적으로 개선했습니다.',
+    title: '소금같은 예술 웹페이지 구축',
+    description:
+      '국/영문 콘텐츠와 다수의 백엔드 데이터 연동이 필요한 웹페이지를 Vue3 및 Pinia 기반으로 개발하였습니다.',
+    image: '/images/project1_thumb.webp',
   },
   {
     title: '락소히든몰딩 쇼핑몰 리뉴얼',
     description: '독립몰 기반 쇼핑몰을 카페24 기반 쇼핑몰로 이전하고 리뉴얼을 진행, 맞춤형 쇼핑몰 UI를 구현했습니다.',
+    image: '/images/project2_thumb.webp',
   },
   {
     title: '유렌카 장기렌트 플랫폼 개발 총괄',
     description:
       '소통, 기획, 디자인, 개발, 배포 및 인프라 세팅까지 전 과정을 직접 총괄하여 풀스택 서비스를 구현했습니다.',
+    image: '/images/project3_thumb.webp',
   },
   {
     title: '승계고 플랫폼 개발 총괄',
     description: '렌트 승계 플랫폼을 Vue3와 Pinia 기반으로 개발했으며 배포 및 인프라 세팅까지 직접 총괄하였습니다.',
+    image: '/images/project4_thumb.webp',
   },
 ] as const;
 
@@ -81,6 +86,7 @@ export const EXPERIENCES = [
       '요구사항 분석부터 UX/UI 설계, 디자인시스템 구축 및 배포까지 서비스 개발 전반을 주도',
       'React 기반 VR 투어 플랫폼 구축 및 WebSocket을 활용한 실시간 채팅 기능 구현',
       'AWS 인프라 구성 및 GitHub Actions 기반 CI/CD 환경 구축을 통한 배포 프로세스 자동화',
+      '생성형 AI 및 에이전트를 적극 활용하여 개발 효율성 및 콘텐츠 품질 향상',
     ],
     current: true,
   },
