@@ -3,6 +3,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { Container } from '@/components/ui/Container';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { PROJECTS } from '@/lib/site';
+import Image from 'next/image';
 
 export function Projects() {
   return (
@@ -20,11 +21,15 @@ export function Projects() {
             {PROJECTS.map((project, index) => (
               <Reveal key={project.title} delay={index * 0.06}>
                 <article className="group">
-                  <div className="relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-                    <div className="aspect-4/3" />
-                    <span className="absolute right-4 bottom-5 inline-flex size-9 items-center justify-center rounded-full bg-white text-black shadow-lg z-5">
+                  <div className="relative aspect-video overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+                    {project.image && <Image src={project.image} alt={project.title} fill className="object-cover" />}
+                    {/* <span className="absolute right-4 bottom-5 inline-flex size-9 items-center justify-center rounded-full bg-white text-black shadow-lg z-5">
                       <Plus className="size-5" strokeWidth={1.5} />
-                    </span>
+                    </span> */}
+                    <div className="absolute flex items-center justify-center gap-1 inset-0 z-5 bg-black/20 backdrop-blur-md cursor-pointer hover:bg-black/40 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                      <span className="text-lg text-white font-bold">자세히 보기</span>
+                      <ArrowUpRight className="size-5 text-white" />
+                    </div>
                   </div>
                   <h4 className="mt-4 text-lg font-semibold tracking-tight text-gray-950 dark:text-white">
                     {project.title}
