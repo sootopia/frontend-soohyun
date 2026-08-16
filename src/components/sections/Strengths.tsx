@@ -16,7 +16,7 @@ export function Strengths() {
             />
           </Reveal>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:gap-4 md:grid-cols-3">
             {STRENGTHS.map((item, index) => (
               <Reveal key={item.title} delay={index * 0.08}>
                 <article>
@@ -32,10 +32,12 @@ export function Strengths() {
                       />
                     )}
                   </div>
-                  <h4 className="mt-5 text-lg font-semibold tracking-tight text-gray-950 dark:text-white">
+                  <h4 className="mt-4 md:mt-5 text-lg font-semibold tracking-tight text-gray-950 dark:text-white">
                     {item.title}
                   </h4>
-                  <p className="mt-2 text-base leading-relaxed text-gray-500 dark:text-gray-400">{item.description}</p>
+                  <p className="mt-2 text-base break-keep md:break-all leading-relaxed text-gray-500 dark:text-gray-400">
+                    {item.description}
+                  </p>
                 </article>
               </Reveal>
             ))}
