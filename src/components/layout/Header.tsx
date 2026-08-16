@@ -23,7 +23,7 @@ export function Header() {
         <Container className="relative flex h-14 items-center justify-between md:h-15">
           <Logo />
           <Navbar className="absolute left-1/2 -translate-x-1/2" />
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 md:gap-2">
             <GithubLink />
             <ThemeToggle />
             <MobileNav open={menuOpen} onOpenChange={setMenuOpen} />

@@ -7,7 +7,7 @@ type LogoProps = {
 
 export function Logo({ className }: LogoProps) {
   return (
-    <a href="#top" className={cn('text-xl font-extrabold text-black dark:text-white', className)}>
+    <a href="#top" className={cn('text-lg md:text-xl font-extrabold text-black dark:text-white', className)}>
       {SITE.name}
     </a>
   );
