@@ -15,7 +15,7 @@ export function Contact() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row">
+            <div className="mt-12 flex justify-center gap-2">
               <Button href={SITE.githubUrl} variant="dark">
                 Github 바로가기
               </Button>
