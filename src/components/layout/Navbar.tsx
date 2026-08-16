@@ -15,7 +15,7 @@ export function Navbar({ className }: NavbarProps) {
     <nav
       aria-label="페이지 섹션"
       className={cn(
-        'flex px-2 py-1.5 items-center gap-2 rounded-full bg-black/8 backdrop-blur-lg dark:bg-white/8',
+        'hidden px-2 py-1.5 items-center gap-2 rounded-full bg-black/8 backdrop-blur-lg md:flex',
         className,
       )}
     >
@@ -29,7 +29,7 @@ export function Navbar({ className }: NavbarProps) {
             className={cn(
               'rounded-full px-3 py-1.5 text-base whitespace-nowrap transition-colors',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
-              isActive ? 'bg-black text-white dark:bg-white dark:text-black' : 'text-gray-600 dark:text-gray-300',
+              isActive ? 'bg-black text-white' : 'text-gray-600',
             )}
           >
             {item.label}
