@@ -9,13 +9,13 @@ export function Contact() {
       <section id="contact" className="py-28 md:py-48">
         <Container className="text-center">
           <Reveal>
-            <h2 className="text-3xl font-semibold text-black md:text-6xl leading-tight">
+            <h2 className="text-3xl font-semibold text-black md:text-6xl leading-tight dark:text-white">
               궁금한 점이 있으시다면 <br />
               <span className="text-gray-400">언제든 연락 주세요.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row">
+            <div className="mt-12 flex justify-center gap-2">
               <Button href={SITE.githubUrl} variant="dark">
                 Github 바로가기
               </Button>

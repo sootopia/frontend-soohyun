@@ -2,7 +2,7 @@ import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from 'reac
 import { cn } from '@/lib/cn';
 
 const baseClassName =
-  'inline-flex size-10 items-center justify-center rounded-full text-gray-800 transition-colors hover:bg-gray-100 active:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white dark:active:bg-gray-900';
+  'inline-flex size-9 md:size-10 items-center justify-center rounded-full text-gray-800 transition-colors hover:bg-gray-100 active:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white dark:active:bg-gray-900';
 
 type IconButtonProps = {
   href?: string;

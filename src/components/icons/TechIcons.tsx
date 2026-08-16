@@ -150,7 +150,10 @@ export function TechIcon({ name }: { name: TechName }) {
   const Icon = ICONS[name];
 
   return (
-    <span title={name} className="flex size-7 items-center justify-center rounded-sm bg-gray-100 text-gray-600">
+    <span
+      title={name}
+      className="flex size-7 items-center justify-center rounded-sm bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-500"
+    >
       <Icon className="size-4.5" />
       <span className="sr-only">{name}</span>
     </span>
