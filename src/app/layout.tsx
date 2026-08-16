@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="ko" className={`${astaSans.variable} h-full`} suppressHydrationWarning>
-      <body className="min-h-full font-sans">
+      <body className="font-sans">
         <Providers>
           <Header />
           {children}
