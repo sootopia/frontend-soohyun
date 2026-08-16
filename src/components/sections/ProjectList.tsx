@@ -28,8 +28,10 @@ export function ProjectList() {
                   <ArrowUpRight className="size-5 text-white" />
                 </button>
               </div>
-              <h4 className="mt-4 text-lg font-semibold tracking-tight text-gray-950">{project.title}</h4>
-              <p className="mt-2 text-base leading-relaxed text-gray-500">{project.description}</p>
+              <h4 className="mt-4 text-lg font-semibold tracking-tight text-gray-950 dark:text-gray-200">
+                {project.title}
+              </h4>
+              <p className="mt-2 text-base leading-relaxed text-gray-500 dark:text-gray-400">{project.description}</p>
             </article>
           </Reveal>
         ))}

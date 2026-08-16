@@ -2,8 +2,8 @@ import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from 'reac
 import { cn } from '@/lib/cn';
 
 const variants = {
-  dark: 'bg-gray-950 text-white hover:bg-gray-800 dark:bg-white dark:text-gray-950 dark:hover:bg-gray-200',
-  gray: 'border border-gray-200 bg-white text-gray-950 hover:bg-gray-50 dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-gray-900',
+  dark: 'bg-gray-950 text-white hover:bg-gray-800 dark:bg-white dark:text-gray-950 dark:hover:bg-gray-300',
+  gray: 'bg-gray-200 text-gray-950 hover:bg-gray-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900',
 } as const;
 
 const baseClassName =

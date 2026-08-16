@@ -123,7 +123,7 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
             />
             <motion.div
               id="mobile-nav"
-              className="absolute inset-0 bg-white"
+              className="absolute inset-0 bg-white dark:bg-black"
               variants={shouldReduceMotion ? undefined : panelVariants}
             >
               <nav aria-label="모바일 페이지 섹션" className="flex flex-col gap-2 px-6 py-10">
@@ -139,7 +139,9 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
                       className={cn(
                         'rounded-xl px-3 py-2 text-xl tracking-tight transition-colors',
                         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
-                        isActive ? 'text-black font-bold' : 'text-gray-400 font-semibold',
+                        isActive
+                          ? 'text-black font-bold dark:text-white'
+                          : 'text-gray-400 font-semibold dark:text-gray-500',
                       )}
                     >
                       {item.label}

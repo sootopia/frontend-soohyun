@@ -7,7 +7,7 @@ import Image from 'next/image';
 export function Strengths() {
   return (
     <div className="px-1 md:px-2">
-      <section id="strengths" className="py-16 md:py-20 rounded-xl bg-gray-50">
+      <section id="strengths" className="py-16 md:py-20 rounded-xl bg-gray-50 dark:bg-white/5">
         <Container>
           <Reveal>
             <SectionTitle
@@ -32,7 +32,7 @@ export function Strengths() {
                       />
                     )}
                   </div>
-                  <h4 className="mt-4 md:mt-5 text-lg font-semibold tracking-tight text-gray-950 dark:text-white">
+                  <h4 className="mt-4 md:mt-5 text-lg font-semibold tracking-tight text-gray-950 dark:text-gray-200">
                     {item.title}
                   </h4>
                   <p className="mt-2 text-base break-keep md:break-all leading-relaxed text-gray-500 dark:text-gray-400">

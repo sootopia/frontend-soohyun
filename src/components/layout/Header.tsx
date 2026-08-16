@@ -16,7 +16,7 @@ export function Header() {
     <header
       className={cn(
         'sticky top-0 z-1030 bg-transparent transition-colors duration-450 ease-[cubic-bezier(0.22,1,0.36,1)]',
-        menuOpen && 'bg-white',
+        menuOpen && 'bg-white dark:bg-black',
       )}
     >
       <div className="px-1 md:px-2">
