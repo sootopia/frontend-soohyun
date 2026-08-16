@@ -8,5 +8,5 @@ type ContainerProps = {
 };
 
 export function Container({ as: Component = 'div', className, children }: ContainerProps) {
-  return <Component className={cn('mx-auto w-full max-w-360 px-5', className)}>{children}</Component>;
+  return <Component className={cn('mx-auto w-full max-w-360 px-4 md:px-5', className)}>{children}</Component>;
 }
