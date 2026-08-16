@@ -82,10 +82,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           >
             <div className="mb-6 flex items-start justify-between gap-4">
               <div>
-                <h3 id={titleId} className="text-xl font-semibold text-black md:text-2xl">
+                <h3 id={titleId} className="text-xl font-semibold text-black md:text-2xl leading-tight">
                   {project.title}
                 </h3>
-                <p className="mt-1 text-base text-gray-500">{project.period}</p>
+                <p className="mt-1 text-[15px] md:text-base text-gray-500">{project.period}</p>
               </div>
               <IconButton aria-label="닫기" onClick={onClose} className="shrink-0">
                 <X className="size-5" strokeWidth={1.8} />
@@ -96,7 +96,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
             <ul className="mt-6 space-y-1.5 p-4 md:p-6 rounded-lg bg-gray-100">
               {project.highlights.map((highlight) => (
-                <li key={highlight} className="flex gap-2 text-base leading-relaxed text-gray-600">
+                <li key={highlight} className="flex gap-2 text-sm md:text-base leading-relaxed text-gray-600">
                   <span className="mt-[0.7em] size-1 shrink-0 rounded-full bg-gray-400" />
                   <span>{highlight}</span>
                 </li>
